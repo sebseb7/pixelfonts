@@ -1,6 +1,6 @@
 #include "font.h"
 
-prog_uint8_t font5x3[][3] = {
+const glyph5x3 font5x3[] PROGMEM = {
 	{0x00,0x00,0x00}, // ' '
 	{0x00,0x1D,0x00}, // '!'
 	{0x18,0x00,0x18}, // '"'
@@ -98,3 +98,4 @@ prog_uint8_t font5x3[][3] = {
 	{0x08,0x18,0x10}, // '~'
 };
 
+const int font5x3len = sizeof(font5x3)/sizeof(*font5x3);
