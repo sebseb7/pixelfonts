@@ -5,11 +5,11 @@
 
 #ifdef __AVR__
 #include <avr/pgmspace.h>
-typedef prog_uint8_t glyph5x3[3];
 #else
 #define PROGMEM
-typedef unsigned char glyph5x3[3];
 #endif
+
+typedef unsigned char glyph5x3[3];
 
 extern const glyph5x3 font5x3[];
 extern const int font5x3len;
